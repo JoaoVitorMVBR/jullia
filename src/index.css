@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Lato:wght@300;400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 50% 4%;
+    --foreground: 38 30% 90%;
+
+    --card: 220 50% 8%;
+    --card-foreground: 38 30% 90%;
+
+    --popover: 220 50% 8%;
+    --popover-foreground: 38 30% 90%;
+
+    --primary: 240 100% 25%;
+    --primary-foreground: 38 30% 95%;
+
+    --secondary: 38 40% 70%;
+    --secondary-foreground: 220 50% 8%;
+
+    --muted: 220 30% 15%;
+    --muted-foreground: 38 20% 60%;
+
+    --accent: 43 60% 55%;
+    --accent-foreground: 220 50% 4%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 30% 18%;
+    --input: 220 30% 18%;
+    --ring: 43 60% 55%;
+
+    --radius: 0.5rem;
+
+    --sand: 38 40% 82%;
+    --gold: 43 60% 55%;
+    --navy: 240 100% 25%;
+    --navy-deep: 240 100% 12%;
+
+    --font-serif: 'Playfair Display', Georgia, serif;
+    --font-sans: 'Lato', sans-serif;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-sans);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+  }
+}
+
+@layer utilities {
+  .font-serif {
+    font-family: var(--font-serif);
+  }
+  .font-sans {
+    font-family: var(--font-sans);
+  }
+  .text-gold {
+    color: hsl(var(--gold));
+  }
+  .text-sand {
+    color: hsl(var(--sand));
+  }
+  .bg-navy {
+    background-color: hsl(var(--navy));
+  }
+  .bg-navy-deep {
+    background-color: hsl(var(--navy-deep));
+  }
+  .border-gold {
+    border-color: hsl(var(--gold));
+  }
+}
+
+/* Scroll arrow bounce */
+@keyframes bounce-slow {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(12px); }
+}
+.animate-bounce-slow {
+  animation: bounce-slow 2s ease-in-out infinite;
+}
+
+/* Floating icons drift */
+@keyframes float {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-20px) rotate(5deg); }
+}
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+.animate-float-delay {
+  animation: float 7s ease-in-out 1s infinite;
+}
+.animate-float-delay-2 {
+  animation: float 8s ease-in-out 2s infinite;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Hide scrollbar for cleaner look */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: hsl(var(--background));
+}
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--muted));
+  border-radius: 3px;
+}
