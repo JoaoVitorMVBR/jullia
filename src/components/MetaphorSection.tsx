@@ -422,7 +422,7 @@ const MetaphorSection = ({ photoUrl = "public/ChatGPT Image 7 de mar. de 2026, 1
             headline="Jullia"
             body="Neste Dia das Mulheres, exalto quem você é, mas principalmente a forma como você torna o meu mundo muito mais bonito de se viver. Feliz dia das mulheres!"
             icon={<SunIcon color={BLUE} size={22} />}
-            photoUrl="public/WhatsApp Image 2026-03-07 at 17.35.42(1).jpeg"
+            photoUrl="/tradicao.jpeg"
             photoAlt="Julia na praia"
           />
         </div>

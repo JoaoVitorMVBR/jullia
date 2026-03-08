@@ -80,7 +80,7 @@ const FloatingHeart = ({ h }: { h: HeartDef }) => (
 
 // ─── Main Component ───────────────────────────────────────────────────────────
 const PhotoHeartHero = ({
-  photoUrl = "public/ChatGPT Image 7 de mar. de 2026, 16_24_27.png",
+  photoUrl = "/jullia.png",
   name = "Te quiero",
   subtitle = "Feliz dia das mulheres",
 }: PhotoHeartHeroProps) => {
