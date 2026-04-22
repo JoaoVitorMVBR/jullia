@@ -8,12 +8,12 @@ const RiddleComponent: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const correctAnswer = '14 de dezembro';
+    const correctAnswer = 'Joselito';
     const userInput = input.toLowerCase().trim();
     if (userInput === correctAnswer.toLowerCase()) {
-      setMessage('Correto! A data é 14 de dezembro. \n Parabéns por desvendar o enigma. Para avançar, solicite ao sócio a próxima pista.');
+      setMessage('Correto! Joselito é a resposta. \n Parabéns por desvendar o enigma. Para avançar, solicite ao noivo a próxima pista.');
       setMessageType('success');
-    } else if (userInput.includes('14') || userInput.includes('dezembro')) {
+    } else if (userInput.includes('Bar') || userInput.includes('caipirinha') || userInput.includes('cerveja') || userInput.includes('espetinho')) {
       setMessage('Você entendeu o conceito, siga neste caminho');
       setMessageType('hint');
     } else {
@@ -28,7 +28,7 @@ const RiddleComponent: React.FC = () => {
     <div className="min-h-screen bg-white flex items-center justify-center px-4">
       <div className="max-w-2xl w-full text-center">
         <h1 className="text-2xl md:text-3xl font-light leading-relaxed mb-8 text-gray-800">
-          Muitos celebram o fim neste mês, mas eu o sócio celebro o Gênesis. Sou o número que reside no intervalo do dez e do vinte, no coração do último suspiro do ano. Não fui um presente embrulhado, mas o maior ganho de dois parceiros que, ao se verem, mudaram o destino. Identifique o meu lugar no tempo !?
+          Tenho um nome simples. Não sou famoso, mas moro do lado de quem é. Meu vizinho usa preto e branco e faz certos torcedores sofrerem só de passar. Sou pequeno, mas guardo um grande momento. Quem sou eu?
         </h1>
         <form onSubmit={handleSubmit} className="flex items-center justify-center">
           <div className="flex items-center bg-[#f0f4f9] rounded-full px-4 py-2 w-full max-w-md shadow-sm">
