@@ -28,7 +28,7 @@ const RiddleComponent: React.FC = () => {
     <div className="min-h-screen bg-white flex items-center justify-center px-4">
       <div className="max-w-2xl w-full text-center">
         <h1 className="text-2xl md:text-3xl font-light leading-relaxed mb-8 text-gray-800">
-          Sou azul como o mar que você pisou em Recife. Não fui lembrança, fui o caminho. Tocei a areia, molhei nos pés, e guardei cada passo de uma memória que você não esquece. O que sou eu?
+          Sou azul como o mar que você pisou em Recife. Não fui lembrança, fui o caminho. Toquei a areia, molhei nos pés, e guardei cada passo de uma memória que você não esquece. O que sou eu?
         </h1>
         <form onSubmit={handleSubmit} className="flex items-center justify-center">
           <div className="flex items-center bg-[#f0f4f9] rounded-full px-4 py-2 w-full max-w-md shadow-sm">
