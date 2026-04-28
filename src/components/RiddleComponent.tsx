@@ -8,7 +8,7 @@ const RiddleComponent: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const correctAnswer = 'Joselito';
+    const correctAnswer = 'Havaiana';
     const userInput = input.toLowerCase().trim();
     if (userInput === correctAnswer.toLowerCase()) {
       setMessage('Correto! Havaiana é a resposta. Parabéns por desvendar o enigma. Para avançar, solicite ao MARIDO que tem muito juízo a próxima pista.');
