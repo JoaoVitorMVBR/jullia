@@ -11,9 +11,9 @@ const RiddleComponent: React.FC = () => {
     const correctAnswer = 'Joselito';
     const userInput = input.toLowerCase().trim();
     if (userInput === correctAnswer.toLowerCase()) {
-      setMessage('Correto! Joselito é a resposta. \n Parabéns por desvendar o enigma. Para avançar, solicite ao noivo a próxima pista.');
+      setMessage('Correto! Havaiana é a resposta. Parabéns por desvendar o enigma. Para avançar, solicite ao MARIDO que tem muito juízo a próxima pista.');
       setMessageType('success');
-    } else if (userInput.includes('Bar') || userInput.includes('caipirinha') || userInput.includes('cerveja') || userInput.includes('espetinho')) {
+    } else if (userInput.includes('chinelo') || userInput.includes('sandália')) {
       setMessage('Você entendeu o conceito, siga neste caminho');
       setMessageType('hint');
     } else {
@@ -28,7 +28,7 @@ const RiddleComponent: React.FC = () => {
     <div className="min-h-screen bg-white flex items-center justify-center px-4">
       <div className="max-w-2xl w-full text-center">
         <h1 className="text-2xl md:text-3xl font-light leading-relaxed mb-8 text-gray-800">
-          Tenho um nome simples. Não sou famoso, mas moro do lado de quem é. Meu vizinho usa preto e branco e faz certos torcedores sofrerem só de passar. Sou pequeno, mas guardo um grande momento. Quem sou eu?
+          Sou azul como o mar que você pisou em Recife. Não fui lembrança, fui o caminho. Tocei a areia, molhei nos pés, e guardei cada passo de uma memória que você não esquece. O que sou eu?
         </h1>
         <form onSubmit={handleSubmit} className="flex items-center justify-center">
           <div className="flex items-center bg-[#f0f4f9] rounded-full px-4 py-2 w-full max-w-md shadow-sm">
