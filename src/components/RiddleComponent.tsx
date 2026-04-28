@@ -9,8 +9,9 @@ const RiddleComponent: React.FC = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const correctAnswer = 'Havaiana';
+    const correctAnswer1 = 'Havaianas';
     const userInput = input.toLowerCase().trim();
-    if (userInput === correctAnswer.toLowerCase()) {
+    if (userInput === correctAnswer.toLowerCase() || userInput === correctAnswer1.toLowerCase()) {
       setMessage('Correto! Havaiana é a resposta. Parabéns por desvendar o enigma. Para avançar, solicite ao MARIDO que tem muito juízo a próxima pista.');
       setMessageType('success');
     } else if (userInput.includes('chinelo') || userInput.includes('sandália')) {
