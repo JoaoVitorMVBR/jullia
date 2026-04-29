@@ -8,12 +8,12 @@ const RiddleComponent: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const correctAnswer = 'Cuzcuz e suco de laranja';
+    const correctAnswer = 'banoffee';
     const userInput = input.toLowerCase().trim();
     if (userInput === correctAnswer.toLowerCase()) {
-      setMessage('Correto! Cuzcuz e suco de laranja é a resposta. Parabéns por desvendar o enigma. Para a etapa final e descobrir seu destino, solicite ao Homem mais sortudo do mundo(por ter você) a próxima pista. Você tem um sorriso tão lindo que ilumina tudo ao redor');
+      setMessage('Correto! banoffee é a resposta. Parabéns por desvendar o enigma. Para a etapa final e descobrir seu destino, solicite ao Homem mais sortudo do mundo(por ter você) a próxima pista. Você tem um sorriso tão lindo que ilumina tudo ao redor');
       setMessageType('success');
-    } else if (userInput.includes('milho') || userInput.includes('suco')) {
+    } else if (userInput.includes('doce') || userInput.includes('torta')) {
       setMessage('Você entendeu o conceito, siga neste caminho');
       setMessageType('hint');
     } else {
@@ -28,7 +28,7 @@ const RiddleComponent: React.FC = () => {
     <div className="min-h-screen bg-white flex items-center justify-center px-4">
       <div className="max-w-2xl w-full text-center">
         <h1 className="text-2xl md:text-3xl font-light leading-relaxed mb-8 text-gray-800">
-          Sou pequena, redonda e laranja por dentro. Combino perfeitamente com um prato simples do nordeste, feito de farinha, que também é o favorito dela. Juntos, somos o café da manhã dos sonhos. Quem sou eu?
+          Não vim de padaria, não vim de confeitaria. Nasci de mãos que nunca tinham me feito antes. Carrego três camadas, mas nenhuma é acaso — cada uma foi escolhida pra você. Sou doce, mas não sou simples. Sou a primeira vez de quem quis acertar. O que sou eu?
         </h1>
         <form onSubmit={handleSubmit} className="flex items-center justify-center">
           <div className="flex items-center bg-[#f0f4f9] rounded-full px-4 py-2 w-full max-w-md shadow-sm">
