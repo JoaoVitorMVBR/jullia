@@ -95,7 +95,7 @@ const RiddleComponent: React.FC = () => {
               type="text"
               value={input}
               onChange={(e) => setInput(e.target.value)}
-              placeholder={stage === 1 ? 'Digite as coordenadas decodificadas...' : 'Digite a resposta final...'}
+              placeholder={stage === 1 ? 'Digite a resposta...' : 'Digite a resposta final...'}
               className="flex-1 bg-transparent outline-none text-gray-700 placeholder-gray-500 border border-gray-400 rounded-full px-2 py-1"
             />
             <button
